@@ -376,16 +376,59 @@
         </li>
         </ul>
         </div>
+        <div class="footer-subscription">
+             <article class="subscription-title">Подпишитесь на рассылку</article>
+             <form class="subscription-email">
+                 <label>
+                     <input type="email" name="email" placeholder="E-mail">
+                 </label>
+                <button class="subscription-button" type="submit">Подписаться
+                    <svg class="icon-send">
+                    <use href="./images/symbol-defs2.svg#icon-icon-send"></use>
+                    </svg>
+                    </button>
+             </form>
         </div>
     </footer>
     <!-- Модальное Окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn" type="button" data-modal-close>
-                <svg class="icon-vector">
-                    <use href="./images/sprait.svg#icon-Vector"></use>
+                <svg class="icon-Close">
+                    <use href="./images/symbol-defs2.svg#icon-Close"></use>
                 </svg>
             </button>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal-form">
+                <label class="label-form" for="name">Имя</label>
+                <input class="form-name" id="name" type="text" name="name" maxlength="50">
+                <svg class="icon-vector3">
+                    <use href="./images/symbol-defs2#icon-Vector-3"></use>
+                </svg>
+
+                <label class="label-form" for="phone">Телефон</label>
+                <input class="form-name" id="phone" type="tel" name="phone" maxlength="16">
+                <svg class="icon-vector">
+                    <use href="./images/symbol-defs2#icon-Vector"></use>
+                </svg>
+
+                <label class="label-form" for="email">Почта</label>
+                <input class="form-name" id="email" name="email" type="email" maxlength="50">
+                <svg class="icon-vector2">
+                    <use href="./images/symbol-defs2#icon-Vector-2"></use>
+                </svg>
+
+                <label class="label-form" for="comment">Комментарий</label>
+                <textarea class="form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+
+                <label class="label-form agreement" for="check"><input class="agreement-checkbox" type="checkbox" name="ofer" id="check"
+                 value="true">
+                <span class="psevdo-check"></span>Соглашаюсь с рассылкой и принимаю<a class="label-link" href="/">Условия
+                договора</a>
+
+                <button class="form-btn" type="submit">Отправить</button>
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
