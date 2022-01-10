@@ -682,7 +682,9 @@ body {
 
 .footer-social-link {
   display: flex;
-  margin-right: 93px;
+}
+.footer-subscription {
+  margin-left: auto;
 }
 
 .footer-link-icon {
