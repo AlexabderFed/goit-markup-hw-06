@@ -401,22 +401,27 @@
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal-form">
                 <label class="label-form" for="name">Имя</label>
-                <input class="form-name" id="name" type="text" name="name" maxlength="50">
-                <svg class="icon-vector3">
-                    <use href="./images/symbol-defs2#icon-Vector-3"></use>
-                </svg>
-
+                    <div class="form-input">
+                        <input class="form-name" id="name" type="text" name="name" maxlength="50">
+                            <svg class="modal-icon">
+                                 <use href="./images/symbol-defs2#icon-Vector-3"></use>
+                             </svg>
+                    </div>
                 <label class="label-form" for="phone">Телефон</label>
-                <input class="form-name" id="phone" type="tel" name="phone" maxlength="16">
-                <svg class="icon-vector">
-                    <use href="./images/symbol-defs2#icon-Vector"></use>
-                </svg>
+                    <div class="form-input">
+                    <input class="form-name" id="phone" type="tel" name="phone" maxlength="16">
+                        <svg class="modal-icon">
+                             <use href="./images/symbol-defs2#icon-Vector"></use>
+                         </svg>
+                    </div>
 
                 <label class="label-form" for="email">Почта</label>
+                <div class="form-input">
                 <input class="form-name" id="email" name="email" type="email" maxlength="50">
-                <svg class="icon-vector2">
+                <svg class="modal-icon">
                     <use href="./images/symbol-defs2#icon-Vector-2"></use>
                 </svg>
+                     </div>  
 
                 <label class="label-form" for="comment">Комментарий</label>
                 <textarea class="form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
