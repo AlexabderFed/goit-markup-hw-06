@@ -40,7 +40,7 @@ label {
   --primery-gap: 30px;
   --primery-icon-color: rgba(175, 177, 184, 1);
 }
-
+/* Скрытые заголовки */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,7 +86,6 @@ button:focus {
   margin-left: auto;
   width: 1200px;
 
-  /* outline: 1px solid red; */
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -236,14 +235,7 @@ body {
   margin-right: 10px;
   display: inline-flex;
 }
-.contact .contact__link:hover .contact__icon--mail,
-.contact .contact__link:focus .contact__icon--mail {
-  fill: var(--accent-color);
-}
-.contact .contact__link:hover .contact__icon--tel,
-.contact .contact__link:focus .contact__icon--tel {
-  fill: var(--accent-color);
-}
+
 .contact__icon--tel {
   width: 10px;
   height: 16px;
@@ -251,6 +243,17 @@ body {
   margin-right: 10px;
   display: inline-flex;
 }
+
+.contact .contact__link:hover .contact__icon--mail,
+.contact .contact__link:focus .contact__icon--mail {
+  fill: var(--accent-color);
+}
+
+.contact .contact__link:hover .contact__icon--tel,
+.contact .contact__link:focus .contact__icon--tel {
+  fill: var(--accent-color);
+}
+
 /* Закончил работать с Header */
 
 /* Секция Герой */
@@ -287,9 +290,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  /* outline: 1px solid red; */
 
-  /* margin-top: 0; */
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -451,7 +452,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
