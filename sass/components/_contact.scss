@@ -5,56 +5,38 @@
   list-style: none;
 }
 
-.contact .contact__item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact .contact__link {
-  color: var(--primery-text-color);
+.contact__link {
+  color: $primery-text-color;
   text-decoration: none;
   align-items: center;
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: $primery-icon-color;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact__link .contact__icon--mail:hover,
-.contact__link .contact__icon--mail:focus {
-  fill: var(--accent-color);
-}
-.contact__link .contact__icon--tel:hover,
-.contact__link .contact__icon--tel:focus {
-  fill: var(--accent-color);
-}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.contact__item .contact__link:hover,
-.contact__item .contact__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
-
-.contact__icon--mail {
+.contact__icon-mail {
   width: 16px;
   height: 12px;
-  fill: var(--primery-icon-color);
   margin-right: 10px;
   display: inline-flex;
 }
 
-.contact__icon--tel {
+.contact__icon-tel {
   width: 10px;
   height: 16px;
-  fill: var(--primery-icon-color);
   margin-right: 10px;
   display: inline-flex;
-}
-
-.contact .contact__link:hover .contact__icon--mail,
-.contact .contact__link:focus .contact__icon--mail {
-  fill: var(--accent-color);
-}
-
-.contact .contact__link:hover .contact__icon--tel,
-.contact .contact__link:focus .contact__icon--tel {
-  fill: var(--accent-color);
 }
